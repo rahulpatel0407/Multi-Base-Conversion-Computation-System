@@ -1,0 +1,19 @@
+{
+  "name": "binary-decimal-main",
+  "private": true,
+  "workspaces": [
+    "frontend",
+    "server",
+    "shared"
+  ],
+  "scripts": {
+    "dev": "concurrently \"npm run dev -w shared\" \"npm run dev -w server\" \"npm run dev -w frontend\"",
+    "build": "npm run build -w shared && npm run build -w server && npm run build -w frontend",
+    "lint": "npm run lint -w shared && npm run lint -w server && npm run lint -w frontend",
+    "test": "npm run test -w shared && npm run test -w server && npm run test -w frontend",
+    "start": "npm run start -w server"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.0"
+  }
+}

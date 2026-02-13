@@ -1,0 +1,16 @@
+[
+  {
+    "sessionId": "3ca3bd0b-f0db-4207-824e-20150291e666",
+    "input": "255",
+    "fromBase": 10,
+    "toBase": 8,
+    "result": "377",
+    "steps": [
+      "255 / 8 = 31 rem 7",
+      "31 / 8 = 3 rem 7",
+      "3 / 8 = 0 rem 3",
+      "Read remainders bottom to top -> 377"
+    ],
+    "createdAt": "2026-02-10T17:39:06.647Z"
+  }
+]
